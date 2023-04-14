@@ -36,7 +36,7 @@ a {
 
 /* Content */
 .card{
-    width: min(80%, 500px);
+    width: min(80%, 400px);
     display: flex;
     flex-direction: column;
     background-color: var(--card-color);
@@ -88,7 +88,7 @@ a {
 
 .city-container, .city-container span{
     font-weight: bold !important;
-    font-size: 1em;
+    font-size: 1.5em;
     margin-top: 1.3em;
 }
 
@@ -115,9 +115,10 @@ a {
     font-weight: bold;
 }
 
-.humidity-wind-container{
+.humidity-wind-container, .humidity-wind-container > div{
     display: flex;
     gap: 1em;
+
 }
 
 .humidity-wind-container span{
@@ -190,6 +191,13 @@ a {
 @media only screen and (max-width: 500px) {
     .search {
       flex-direction: column;
+    }
+    .humidity-wind-container{
+        justify-content: space-between;
+    }
+    .humidity-wind-container > div{
+        display: block;
+        font-size: 1.2em;
     }
   }
 
