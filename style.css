@@ -5,6 +5,7 @@
   --bg-color: #2d2d2d;
   --card-color: rgba(20, 20, 20, 0.5);
   --accent-color: #ec6e4c;
+  --darker-accent-color: #ce5b3b;
   --border-radius: 2em;
 }
 
@@ -87,6 +88,9 @@ a {
   background-color: var(--accent-color);
 }
 
+.search-btn:hover {
+  background-color: var(--darker-accent-color);
+}
 .result {
   padding-top: 1em;
   opacity: 0;
