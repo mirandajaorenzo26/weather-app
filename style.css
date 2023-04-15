@@ -59,7 +59,7 @@ a {
   padding: 2em;
   border-radius: var(--border-radius);
   color: white;
-  box-shadow: 0 0 0.8em var(--darker-accent-color);
+  box-shadow: 0 0 1em var(--darker-accent-color);
 }
 
 .title h1 {
