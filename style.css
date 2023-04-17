@@ -18,6 +18,11 @@
 }
 
 /* Global */
+
+html {
+  cursor: none;
+}
+
 body {
   display: grid;
   place-items: center;
@@ -30,8 +35,14 @@ body {
   );
 }
 
+html,
+body {
+  height: 100vh;
+  width: 100vw;
+}
+
 button {
-  appearance: none;
+  all: unset;
   border: 1px solid;
   color: white;
   background-color: var(--card-color);
@@ -52,7 +63,7 @@ a {
 
 /* Content */
 .card {
-  width: min(80%, 400px);
+  width: min(450px, 90%);
   display: flex;
   flex-direction: column;
   background-color: var(--card-color);
@@ -86,6 +97,7 @@ a {
 }
 
 .search-btn {
+  text-align: center;
   background-color: var(--accent-color);
 }
 
@@ -209,9 +221,7 @@ a {
   .search {
     flex-direction: column;
   }
-  .humidity-wind-container {
-    justify-content: space-between;
-  }
+
   .humidity-wind-container > div {
     display: block;
     font-size: 1.2em;
