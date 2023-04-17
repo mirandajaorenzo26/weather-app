@@ -1,5 +1,5 @@
 let weather = {
-  apiKey: 'b86174a682a9f20b06b89ae4d7b1fd12',
+  apiKey: process.env.API_KEY,
   fetchWeather: async function (city) {
     try {
       const res = await fetch(
