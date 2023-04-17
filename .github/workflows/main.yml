@@ -1,6 +1,14 @@
+
+name: My Workflow
+on:
+  push:
+    branches:
+      - main
+
 jobs:
   build:
     runs-on: ubuntu-latest
+    
     steps:
     - name: Use the API key
       env:
